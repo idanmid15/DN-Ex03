@@ -2,7 +2,7 @@
 {
     public class FueledEngine : Engine
     {
-        public enum eFuelType
+        public enum eFuelType 
         {
             Octan96,
             Octan95,
@@ -10,24 +10,27 @@
             Soler
         }
 
-        private readonly float r_MaxChargeTime;
-        private float m_ChargeTimeLeft;
+        private readonly float r_MaxFuelAmount;
+        private eFuelType m_FuelType;
+        private float m_CurrentFuelAmount;
 
-        public FueledEngine(float i_ChargeTimeLeft, float i_MaxChargeTime)
+        public FueledEngine(float i_CurrentFuelAmount, float i_MaxFuelAmount, eFuelType i_FuelType)
         {
-            this.m_ChargeTimeLeft = i_ChargeTimeLeft;
-            this.r_MaxChargeTime = i_ChargeTimeLeft;
+            this.m_CurrentFuelAmount = i_CurrentFuelAmount;
+            this.r_MaxFuelAmount = i_MaxFuelAmount;
+            this.m_EngineType = eEngineType.Fuel;
+            this.m_FuelType = i_FuelType;
         }
 
         public override void RePower(float i_ChargeTime)
         {
-            if (i_ChargeTime + m_ChargeTimeLeft > r_MaxChargeTime)
+            if (i_ChargeTime + m_CurrentFuelAmount > r_MaxFuelAmount)
             {
                 throw new Exception;
             }
             else
             {
-                m_ChargeTimeLeft += i_ChargeTime;
+                m_CurrentFuelAmount += i_ChargeTime;
             }
         }
     }
