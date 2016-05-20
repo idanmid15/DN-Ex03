@@ -10,9 +10,9 @@
             Soler
         }
 
-        private readonly float r_MaxFuelAmount;
-        private eFuelType m_FuelType;
-        private float m_CurrentFuelAmount;
+        protected readonly float r_MaxFuelAmount;
+        protected eFuelType m_FuelType;
+        protected float m_CurrentFuelAmount;
 
         public FueledEngine(float i_CurrentFuelAmount, float i_MaxFuelAmount, eFuelType i_FuelType)
         {

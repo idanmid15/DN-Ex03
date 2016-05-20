@@ -8,6 +8,7 @@ namespace Ex03.GarageLogic
         public ElectricBike
             (string i_ModelType,
             string i_LicensePlate,
+            eLicenseType i_LicenseType,
             string i_WheelManufacturer,
             float[] i_TirePressures,
             float i_ChargeTimeLeft)
