@@ -11,6 +11,11 @@ namespace Ex03.GarageLogic
             other
         }
 
-        public abstract void rePower(float powerAmount);
+        private enum m_EngineType
+        {
+            get,
+        }
+
+        public abstract void RePower(float powerAmount);
     }
 }
