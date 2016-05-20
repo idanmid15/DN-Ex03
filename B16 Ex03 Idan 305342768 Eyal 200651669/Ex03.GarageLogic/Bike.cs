@@ -2,7 +2,7 @@
 
 namespace Ex03.GarageLogic
 {
-    public class Bike
+    public class Bike : Vehicle
     {
         public enum eLicensePlate
         {
