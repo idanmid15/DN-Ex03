@@ -2,7 +2,7 @@
 {
     public class FueledEngine : Engine
     {
-        public enum eFuelType 
+        public enum eFuelType
         {
             Octan96,
             Octan95,
