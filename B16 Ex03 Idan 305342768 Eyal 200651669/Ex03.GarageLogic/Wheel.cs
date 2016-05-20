@@ -2,7 +2,6 @@
 {
     public class Wheel
     {
-        
         private readonly float r_MaxTirePressure;
         public string m_Manufacturer;
 
@@ -12,7 +11,7 @@
         {
             return r_MaxTirePressure;
         }
-        
+
         public string GetManufacturer()
         {
             return m_Manufacturer;
@@ -33,7 +32,6 @@
             this.m_Manufacturer = i_Manufacturer;
             this.m_CurrentTirePressure = i_TirePressure;
             this.r_MaxTirePressure = i_MaxTirePressure;
-
         }
     }
 }

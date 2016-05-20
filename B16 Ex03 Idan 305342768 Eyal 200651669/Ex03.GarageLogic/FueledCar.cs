@@ -2,11 +2,10 @@
 {
     public class FueledCar : Car
     {
-
         private const float k_MaxFueledEngine = 38f;
 
-        public FueledCar
-            (string i_ModelType,
+        public FueledCar(
+            string i_ModelType,
             string i_LicensePlate,
             string i_WheelManufacturer,
             float[] i_TirePressures,
@@ -21,6 +20,7 @@
             {
                 this.m_Wheels.Add(new Wheel(i_WheelManufacturer, currentTirePressure, k_MaxTirePressure));
             }
+
             this.m_Engine = new FueledEngine(i_CurrentFuelAmount, k_MaxFueledEngine, FueledEngine.eFuelType.Octan98);
             this.m_EnergyPrecentageLeft = i_CurrentFuelAmount / k_MaxFueledEngine;
             this.m_CarColor = i_CarColor;

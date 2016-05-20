@@ -1,12 +1,11 @@
-﻿
-namespace Ex03.GarageLogic
+﻿namespace Ex03.GarageLogic
 {
     public class ElectricCar : Car
     {
         private const float k_MaxChargeTime = 3.3f;
-        
-        public ElectricCar
-            (string i_ModelType,
+
+        public ElectricCar(
+            string i_ModelType,
             string i_LicensePlate,
             eCarColor i_CarColor,
             eNumOfDoors i_NumOfDoors,

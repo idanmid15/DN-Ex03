@@ -9,7 +9,7 @@
             Other
         }
 
-        private eEngineType m_EngineType;
+        protected eEngineType m_EngineType;
 
         public abstract void RePower(float powerAmount);
 

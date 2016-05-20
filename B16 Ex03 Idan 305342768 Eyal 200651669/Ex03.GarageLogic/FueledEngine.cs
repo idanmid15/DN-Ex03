@@ -2,7 +2,7 @@
 {
     public class FueledEngine : Engine
     {
-        public enum eFuelType 
+        public enum eFuelType
         {
             Octan96,
             Octan95,
@@ -10,7 +10,7 @@
             Soler
         }
 
-        protected readonly float r_MaxFuelAmount;
+        private readonly float r_MaxFuelAmount;
         protected eFuelType m_FuelType;
         protected float m_CurrentFuelAmount;
 
