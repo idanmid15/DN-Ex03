@@ -1,11 +1,11 @@
 ﻿namespace Ex03.GarageLogic
 {
-    public class ElectricCar : Car
+    public class FueledCar : Car
     {
 
         private const float k_MaxFueledEngine = 38f;
 
-        public ElectricCar
+        public FueledCar
             (string i_ModelType,
             string i_LicensePlate,
             string i_WheelManufacturer,
