@@ -5,13 +5,15 @@ namespace Ex03.GarageLogic
 {
     public class Vehicle
     {
-        private string m_ModelType;
+        protected string m_ModelType;
 
-        private string m_LicensePlate;
+        protected string m_LicensePlate;
 
-        private float m_EnergyPrecentageLeft;
+        protected float m_EnergyPrecentageLeft;
 
-        public List<Wheel> m_Wheels;
+        protected Engine m_Engine;
+
+        protected List<Wheel> m_Wheels;
 
         public string GetModelType()
         {
@@ -31,6 +33,11 @@ namespace Ex03.GarageLogic
         public List<Wheel> GetWheels()
         {
             return m_Wheels;
+        }
+
+        public Engine GetEngine()
+        {
+            return m_Engine;
         }
     }
 }
