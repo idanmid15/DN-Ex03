@@ -4,7 +4,7 @@ namespace Ex03.GarageLogic
 {
     public class Bike : Vehicle
     {
-        public enum eLicensePlate
+        public enum eLicenseType
         {
             A,
             A1,
@@ -12,7 +12,8 @@ namespace Ex03.GarageLogic
             B1
         }
 
-        private eLicensePlate m_licenseType;
-        private int m_EngineVolume;
+        protected const float k_MaxTirePressure = 31;
+        protected eLicenseType m_LicenseType;
+        protected int m_EngineVolume;
     }
 }
